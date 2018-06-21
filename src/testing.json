@@ -1,0 +1,82 @@
+[
+
+    {
+        "name": "Link Peak Utilization",
+        "fields": ["Linkname", "Anode", "Aloc", "Znode", "Zloc", "Vdr", "Type", "TotalBw_A(Mbps)", "UsedBw_A(Mbps)", "PeakBw_A(Mbps)", "UtilPct_A", "PeakUtilPct_A", "#Demand", "PeakCnt", "#OverSubCnt", "SimType", "SimEvent", "Cnt_SimType", "Cnt_SimEvent"],
+        "file": "L2_DVSIM"
+    }, {
+        "name": "Path Delay Information",
+        "fields": ["Pathname", "From", "To", "Bandwidth(Mbps)", "Type", "Priority", "Path", "AdmCost", "DIST(mi)", "Delay(ms)", "Failcnt", "WorstDist(mi)", "WorstDelay(ms)", "SimEventType", "SimEvent"],
+        "file": "L2_PATHDELAY"
+    }, {
+        "name": "Peak Simulation Summary",
+        "fields": ["SimType", "SimEvent", "UP/Down", "Layer", "#Impact", "ImpactBW(Mbps)", "#failed", "FailedBW(Mbps)", "FailedBwPct", "HPr", "#LkBwOvSub", "MaxHop", "AvgHop", "#Terminated", "TermBW"],
+        "file": "L2_PeakSimSummary"
+    }, {
+        "name": "Tunnel Failure Information",
+        "fields": ["SimType", "SimEvent", "Layer", "PathName", "From", "To", "ToIPaddr", "Bandwidth(Mbps)", "Priority", "Metric", "Delay(ms)", "path string", "MiscInfo", "Type"],
+        "file": "L2_PeakSimRoute"
+    }, {
+        "name": "LSP Path Changes",
+        "fields": ["Name", "Node A", "Node Z", "Orig Hop Count", "New Hop Count", "Orig Path Cost", "New Path Cost", "Orig Path", "New Path", "Protection", "Orig Delay", "New Delay", "Delay Change %", "Orig BW", "New BW", "Type"],
+        "file": "L2_PathChange"
+    }, {
+        "name": "RSVP Link Utilization Changes",
+        "fields": ["LinkName", "Node:Interface", "RemoteNode", "LinkBwChange", "LinkBw", "New_RSVP_Util", "Orig_RSVP_Util", "RSVP_UtilDiff"],
+        "file": "L2_LinkUtilChange"
+    }, {
+        "name": "Path Analysis Optimization Report",
+        "fields": ["PathName", "From_Node", "To_Node", "BandWidth", "Orig_Dist/Violation", "New_Dist/Preemption", "Orig_#Hops", "New_#Hops", "Orig_AW", "New_AW", "AW_Gain", "Orig_Path", "New_Path"],
+        "file": "L2_PathAnalysis"
+    }, {
+        "name": "LSP Path Changes",
+        "fields": ["Name", "Node A", "Node Z", "Orig Hop Count", "New Hop Count", "Orig Path Cost", "New Path Cost", "Orig Path", "New Path", "Protection", "Orig Delay", "New Delay", "Delay Change %", "Orig BW", "New BW", "Type"],
+        "file": "L2_PathChange"
+    }, {
+        "name": "LSP Discrepancy",
+        "fields": ["Timestamp", "LSP", "Node", "Control Type", "Path Type", "Description"],
+        "file": "LSP_status"
+    }, {
+        "name": "Integrity Checks",
+        "fields": ["Category", "Message", "Detail", "Severity", "Error Source", "Source File", "Line #", "Line Content", "msg ID"],
+        "file": "ConfigIntegrityChecks"
+    }, {
+	    "name": "Devices",
+        "fields": ["Name", "Vendor", "IP Address", "Source", "System Name", "Description", "Contact", "Location", "Last Update by CLI", "Chassis Type", "Hardware Version", "Hardware Id", "ROM Version", "ROM System Version", "Configuration Register", "Memory", "Configuration Memory", "Configuration Memory in Use", "Boot Image", "Processor", "OS Version", "Mgmt IP Addr", "Model", "OS Family", "Last Update by SNMP", "Hostname"],
+        "file": "ROUTER_LIST"
+    }, {
+	"name": "Line Cards",
+        "fields": ["Name", "Device Name", "Device Vendor", "Device IP Addr.", "Card Id", "Connected Ports", "Shutdown Ports", "No. of Ports", "Part", "S/N", "FRU Line Card", "FRU Route Mem.", "FRU Packet Mem.", "L3 Engine Type", "L3 Engine", "TAN", "Description", "Controller Mem.", "Reserved Ports", "Cost (Estimated)", "Device Mgmt IP Addr.", "Version", "Hostname", "Operational State", "Admin State"],
+        "file": "CARD_LIST"
+    }, {
+	"name": "Physical Interfaces",
+        "fields": ["Name", "Device Name", "Device Vendor", "Device IP Addr.", "Admin Status", "IP Address", "Media Type", "MTU", "Bandwidth", "Physical Address", "Operational Status", "Description", "IPv6", "Device Mgmt IP Addr.", "Card Id", "Aggregated Link", "VLAN", "Switchport Mode", "Hostname"],
+        "file": "INTF_LIST"
+    }, {
+	"name": "Transceivers",
+        "fields": ["Name", "Device Name", "Device Vendor", "Device IP Addr.", "Index", "Part", "S/N", "Cost (Estimated)", "Hostname"],
+        "file": "TRANSCEIVER_LIST"
+    }, {
+	"name": "Misc. Parts",
+        "fields": ["Name", "Device Name", "Device Vendor", "Device IP Addr.", "Part", "S/N", "Description", "Cost (Estimated)", "Hostname"],
+        "file": "MISC_PART_LIST"
+    }, {
+	"name": "Extensive Parts List",
+        "fields": ["Name", "Device Name", "Device Vendor", "Device IP Addr.", "Part", "S/N", "Description", "Cost (Estimated)", "Hostname"],
+        "file": "EXTENSIVE_PART_LIST"
+    }, {
+	"name": "Line Card Usage",
+        "fields": ["Card Name", "Device Name", "Card Id", "Connected Ports", "Shutdown Ports", "Reserved Ports", "No. of Ports", "Hostname"],
+        "file": "HW_LINECARD_USAGE_REPORT"
+    },
+    {
+        "name": "Line Card Usage",
+        "fields": ["Card Name", "Device Name", "Card Id", "Connected Ports", "Shutdown Ports", "Reserved Ports", "No. of Ports", "Hostname"],
+        "file": "HW_LINECARD_USAGE_REPORT"
+    },
+    {
+        "name": "Line Card Usage",
+        "fields": ["Card Name", "Device Name", "Card Id", "Connected Ports", "Shutdown Ports", "Reserved Ports", "No. of Ports", "Hostname"],
+        "file": "HW_LINECARD_USAGE_REPORT"
+    }
+]
